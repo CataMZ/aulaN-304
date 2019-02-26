@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Pague seus boletos {{item}}</h1>
+    {% for i in lista %}
+    <p>{{i}}</p>
+    {% endfor %}
+    
+    {% if item == 'Catarina' %}
+    <p>Não tem boletos para pagar</p>
+    {% else %}
+    <p>Nome no SPC</p>
+    {% endif %}
+    <img src="{% static 'images/paidochris.jpg'%}" alt="">
+{% endblock %}

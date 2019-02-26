@@ -1,0 +1,1 @@
+alert('Pague seu boleto!!');
